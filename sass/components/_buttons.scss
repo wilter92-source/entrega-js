@@ -1,0 +1,55 @@
+/* Botones generales, filtros y estados activos */
+button {
+  @include button-style($color-primary, $color-white);
+}
+
+button:disabled,
+button.is-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.skin-selector__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.skin-selector button {
+  background: $color-light-green;
+  color: $color-primary;
+  border: 1px solid rgba(72, 92, 69, 0.12);
+  padding: 0.58rem 1rem;
+  font-size: 0.78rem;
+  line-height: 1;
+  min-height: 38px;
+
+  &:hover {
+    background: $color-primary;
+    color: $color-white;
+  }
+}
+
+.producto-card button,
+#finalizar-compra,
+#checkout-form button {
+  background: $color-primary;
+  color: $color-white;
+}
+
+.boton-vaciar-carrito:not(:disabled),
+.carrito-actions button:last-child {
+  background: $color-muted-button;
+  border-color: $color-muted-button;
+  color: $color-primary;
+
+  i {
+    color: inherit;
+  }
+}
+

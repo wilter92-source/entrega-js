@@ -1,0 +1,41 @@
+/* Formulario del checkout */
+input,
+select {
+  width: 100%;
+  border: 1px solid rgba(72, 92, 69, 0.22);
+  border-radius: $radius-sm;
+  background: rgba(255, 255, 255, 0.78);
+  color: $color-text;
+  margin-top: 0.35rem;
+  padding: 0.8rem 0.9rem;
+  outline: none;
+
+  &:focus {
+    border-color: $color-primary;
+    box-shadow: 0 0 0 3px rgba(72, 92, 69, 0.12);
+  }
+}
+
+label {
+  display: block;
+  color: $color-primary;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+#checkout-form {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 0.75rem;
+
+  .checkout-row {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 0.85rem;
+
+    @include respond-to(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

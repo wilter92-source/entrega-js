@@ -1,0 +1,73 @@
+/* Modales de SweetAlert2 */
+// Estilos personalizados para los modales de SweetAlert2.
+.swal2-popup {
+  border-radius: $radius-lg;
+  font-family: $font-main;
+}
+
+.swal2-title {
+  color: $color-primary;
+  font-family: $font-display;
+}
+
+.swal2-html-container {
+  color: $color-text;
+}
+
+.swal2-actions {
+  gap: 0.75rem;
+}
+
+.swal-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  border: none;
+  border-radius: $radius-pill;
+  cursor: pointer;
+  font-family: $font-main;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  min-height: 44px;
+  padding: 0.85rem 1.25rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, opacity 0.25s ease;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-2px);
+    box-shadow: $shadow-soft;
+    outline: none;
+  }
+}
+
+.swal-button--confirm {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    background-color: $color-error;
+    color: $color-white;
+  }
+}
+
+.swal-button--cancel {
+  background-color: $color-muted-button;
+  color: $color-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $color-muted-button;
+    color: $color-primary;
+    opacity: 0.86;
+  }
+}
+
+.swal-icon-custom {
+  border: 0;
+  color: $color-primary;
+  font-size: 2.15rem;
+}

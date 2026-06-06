@@ -1,0 +1,20 @@
+/* Variables y utilidades */
+@import 'base/_variables';
+@import 'utilities/_mixin';
+
+/* Base visual del proyecto */
+@import 'base/_fonts';
+@import 'base/_reset';
+
+/* Componentes reutilizables */
+@import 'components/_buttons';
+@import 'components/_cards';
+@import 'components/_forms';
+@import 'components/_toastify';
+@import 'components/_sweetalert';
+
+/* Secciones principales */
+@import 'layout/_header';
+@import 'layout/_carrito';
+@import 'layout/_checkout';
+@import 'layout/_footer';

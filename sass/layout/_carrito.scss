@@ -1,0 +1,251 @@
+/* Carrito lateral y estados de compra */
+.cart-trigger {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 90;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: $shadow-card;
+
+  i {
+    color: inherit;
+    font-size: 0.95rem;
+  }
+
+  span {
+    background-color: $color-cream;
+    color: $color-primary;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 6px;
+    font-size: 0.85rem;
+  }
+}
+
+.overlay-carrito {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 95;
+
+  &.activo {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.panel-carrito {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 100%;
+  max-width: 420px;
+  height: 100vh;
+  background-color: $color-cream;
+  z-index: 100;
+  padding: 28px;
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.15);
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  &.activo {
+    right: 0;
+  }
+}
+
+.panel-carrito.is-empty {
+  .carrito-footer {
+    opacity: 0.88;
+  }
+}
+
+
+.carrito-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-md;
+
+  h2 {
+    color: $color-primary;
+  }
+}
+
+.boton-cerrar-carrito {
+  background: transparent;
+  border: none;
+  color: $color-primary;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.lista-carrito {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.carrito-empty {
+  background-color: rgba(255, 255, 255, 0.72);
+  border: 1px solid $color-light-green;
+  border-radius: $radius-md;
+  color: $color-muted;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.carrito-item {
+  background-color: $color-white;
+  border: 1px solid $color-light-green;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+
+  span {
+    display: block;
+    color: $color-text;
+    margin-bottom: 14px;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+}
+
+.carrito-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    min-height: 38px;
+
+    i {
+      color: inherit;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      min-width: 42px;
+      padding-inline: 14px;
+    }
+
+    &:last-child {
+      background-color: $color-muted-button;
+      border: none;
+      color: $color-primary;
+    }
+  }
+}
+
+.carrito-footer {
+  border-top: 1px solid $color-light-green;
+  padding-top: 20px;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: 12px;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 999px;
+    padding: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    i {
+      color: inherit;
+    }
+  }
+
+  button.is-muted,
+  button:disabled {
+    background-color: $color-muted-button;
+    color: $color-muted-button-text;
+    cursor: not-allowed;
+    opacity: 1;
+    box-shadow: none;
+    transform: none;
+    pointer-events: none;
+
+    i {
+      color: inherit;
+    }
+  }
+
+  #finalizar-compra {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &.is-muted,
+    &:disabled {
+      background-color: $color-muted-button;
+      color: $color-muted-button-text;
+      cursor: not-allowed;
+      opacity: 1;
+      box-shadow: none;
+      transform: none;
+      pointer-events: none;
+    }
+
+    &.is-active {
+      background-color: $color-primary;
+      color: $color-white;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+  }
+}
+
+.boton-vaciar-carrito {
+  background-color: $color-muted-button;
+  color: $color-muted-button-text;
+
+  &.is-active {
+    color: $color-primary;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: $color-muted-button;
+    color: $color-primary;
+  }
+}
+
+@include respond-to(mobile) {
+  .cart-trigger {
+    top: 16px;
+    right: 16px;
+    padding: 10px 16px;
+  }
+
+  .panel-carrito {
+    max-width: 100%;
+    right: -100%;
+  }
+}

@@ -1,0 +1,17 @@
+/* Footer del sitio */
+.site-footer {
+  background-color: $color-primary;
+  color: $color-cream;
+  text-align: center;
+  padding: 32px 16px;
+  margin-top: 48px;
+
+  p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+  }
+
+  p:first-child {
+    font-weight: 700;
+  }
+}

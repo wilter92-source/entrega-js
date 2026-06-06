@@ -1,0 +1,60 @@
+/* Header y bloque de marca */
+.site-header {
+  background: radial-gradient(circle at top right, rgba(176, 191, 168, 0.26), transparent 35%), $color-primary;
+  color: $color-cream;
+  margin-bottom: $spacing-xl;
+  overflow: hidden;
+  padding: 1.5rem 1.5rem 3.75rem;
+
+  .logo-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .logo-image {
+    width: clamp(92px, 12vw, 138px);
+    height: auto;
+  }
+
+  &__content {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__intro {
+    color: $color-light-green;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    margin-bottom: 0.85rem;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: $font-display;
+    font-size: clamp(3rem, 7vw, 6.6rem);
+    font-weight: 600;
+    letter-spacing: -0.04em;
+  }
+
+  @include respond-to(mobile) {
+    padding: 1.25rem 1rem 3.25rem;
+
+    .logo-nav {
+      margin-bottom: 0.85rem;
+    }
+
+    .logo-image {
+      width: clamp(82px, 32vw, 112px);
+    }
+  }
+}

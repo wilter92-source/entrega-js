@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinMatch</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Toastify -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- JS -->
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- Inicio header -->
+  <header class="site-header">
+    <nav class="logo-nav" aria-label="Navegación principal">
+      <a class="logo-link" href="index.html" aria-label="Ir al inicio de SkinMatch">
+        <img class="logo-image" src="img/skinmatch-logo.png" alt="SkinMatch">
+      </a>
+    </nav>
+
+    <div class="site-header__content">
+      <p class="site-header__intro">Rutina personalizada de skincare</p>
+      <h1>Build your glow routine</h1>
+    </div>
+  </header>
+
+  <!-- Inicio main -->
+  <main>
+    <section class="skin-selector" id="selector-piel" aria-label="Selector de tipo de piel">
+      <div class="section-heading">
+        <h2>Selecciona tu tipo de piel</h2>
+      </div>
+
+      <!-- Filtros de piel -->
+      <div class="skin-selector__buttons">
+        <button type="button" data-piel="seca">Piel Seca</button>
+        <button type="button" data-piel="grasa">Piel Grasa</button>
+        <button type="button" data-piel="mixta">Piel Mixta</button>
+        <button type="button" data-piel="sensible">Piel Sensible</button>
+        <button type="button" data-piel="todas">Ver Todos</button>
+      </div>
+    </section>
+
+    <section class="products" id="productos-section" aria-label="Catálogo de productos">
+      <div class="section-heading">
+        <p>Encuentra tu match</p>
+      </div>
+
+      <div id="productos-contenedor"></div>
+    </section>
+
+    <!-- Botón del carrito -->
+    <button type="button" id="abrir-carrito" class="cart-trigger" aria-controls="carrito-drawer">
+      <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+      Mi rutina <span id="contador-carrito">0</span>
+    </button>
+
+    <!-- Carrito lateral -->
+    <div id="carrito-overlay" class="overlay-carrito"></div>
+
+    <aside id="carrito-drawer" class="panel-carrito is-empty" aria-labelledby="carrito-title">
+      <div class="carrito-header">
+        <h2 id="carrito-title">Mi rutina</h2>
+        <button type="button" id="cerrar-carrito" class="boton-cerrar-carrito" aria-label="Cerrar carrito">×</button>
+      </div>
+
+      <div id="carrito-items" class="lista-carrito" aria-live="polite"></div>
+
+      <div class="carrito-footer">
+        <p>Total: $<span id="total">0</span></p>
+
+        <button type="button" id="vaciar-carrito" class="boton-vaciar-carrito is-muted" disabled aria-disabled="true">
+          <i class="fa-solid fa-trash" aria-hidden="true"></i>
+          Vaciar carrito
+        </button>
+
+        <button type="button" id="finalizar-compra" class="is-muted" disabled aria-disabled="true">
+          <i class="fa-solid fa-credit-card" aria-hidden="true"></i>
+          Finalizar rutina
+        </button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Inicio footer -->
+  <footer class="site-footer">
+    <p>© 2026 SkinMatch. Todos los derechos reservados.</p>
+    <p>Proyecto ficticio desarrollado para evaluación final de JavaScript.</p>
+  </footer>
+
+  <!-- Script Toastify -->
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

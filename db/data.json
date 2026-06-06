@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hydrating Cleanser",
+    "categoria": "Limpiador",
+    "tipoPiel": "seca",
+    "precio": 18,
+    "imagen": "../img/productos/hydrating-cleanser.jpg",
+    "descripcion": "Limpiador suave para hidratar la piel desde el primer paso.",
+    "paso": "Limpieza"
+  },
+  {
+    "id": 2,
+    "nombre": "Oil Control Cleanser",
+    "categoria": "Limpiador",
+    "tipoPiel": "grasa",
+    "precio": 18,
+    "imagen": "../img/productos/oil-control-cleanser.jpg",
+    "descripcion": "Limpiador ligero que controla el exceso de grasa sin resecar.",
+    "paso": "Limpieza"
+  },
+  {
+    "id": 3,
+    "nombre": "Balancing Toner",
+    "categoria": "Tónico",
+    "tipoPiel": "mixta",
+    "precio": 20,
+    "imagen": "../img/productos/balancing-toner.jpg",
+    "descripcion": "Tónico que equilibra el pH y refresca la piel mixta.",
+    "paso": "Tonificación"
+  },
+  {
+    "id": 4,
+    "nombre": "Calming Toner",
+    "categoria": "Tónico",
+    "tipoPiel": "sensible",
+    "precio": 20,
+    "imagen": "../img/productos/calming-toner.jpg",
+    "descripcion": "Tónico calmante para piel sensible, sin irritar.",
+    "paso": "Tonificación"
+  },
+  {
+    "id": 5,
+    "nombre": "Vitamin C Serum",
+    "categoria": "Serum",
+    "tipoPiel": "seca",
+    "precio": 25,
+    "imagen": "../img/productos/vitamin-c-serum.jpg",
+    "descripcion": "Serum antioxidante que ilumina y hidrata profundamente.",
+    "paso": "Tratamiento"
+  },
+  {
+    "id": 6,
+    "nombre": "Retinol Serum",
+    "categoria": "Serum",
+    "tipoPiel": "grasa",
+    "precio": 25,
+    "imagen": "../img/productos/retinol-serum.jpg",
+    "descripcion": "Serum que controla grasa y previene imperfecciones.",
+    "paso": "Tratamiento"
+  },
+  {
+    "id": 7,
+    "nombre": "Lightweight Moisturizer",
+    "categoria": "Hidratante",
+    "tipoPiel": "grasa",
+    "precio": 22,
+    "imagen": "../img/productos/lightweight-moist.jpg",
+    "descripcion": "Hidratante ligero que no deja sensación grasa.",
+    "paso": "Hidratación"
+  },
+  {
+    "id": 8,
+    "nombre": "Rich Moisturizer",
+    "categoria": "Hidratante",
+    "tipoPiel": "seca",
+    "precio": 22,
+    "imagen": "../img/productos/rich-moist.jpg",
+    "descripcion": "Hidratante nutritivo que suaviza y protege la piel seca.",
+    "paso": "Hidratación"
+  },
+  {
+    "id": 9,
+    "nombre": "SPF 50 Sunscreen",
+    "categoria": "Protector solar",
+    "tipoPiel": "seca",
+    "precio": 20,
+    "imagen": "../img/productos/spf-sunscreen.jpg",
+    "descripcion": "Protección solar alta para piel seca sin resecar.",
+    "paso": "Protección"
+  },
+  {
+    "id": 10,
+    "nombre": "SPF 50 Oil-Free Sunscreen",
+    "categoria": "Protector solar",
+    "tipoPiel": "grasa",
+    "precio": 20,
+    "imagen": "../img/productos/spf-oil-sunscreen.jpg",
+    "descripcion": "Protector solar ligero, libre de aceites, para piel grasa.",
+    "paso": "Protección"
+  },
+  {
+    "id": 11,
+    "nombre": "Clay Mask",
+    "categoria": "Mascarilla",
+    "tipoPiel": "grasa",
+    "precio": 15,
+    "imagen": "../img/productos/clay-mask.jpg",
+    "descripcion": "Mascarilla de arcilla que absorbe exceso de grasa y purifica.",
+    "paso": "Tratamiento"
+  },
+  {
+    "id": 12,
+    "nombre": "Hydrating Mask",
+    "categoria": "Mascarilla",
+    "tipoPiel": "seca",
+    "precio": 15,
+    "imagen": "../img/productos/hydr-mask.jpg",
+    "descripcion": "Mascarilla hidratante que aporta suavidad y confort.",
+    "paso": "Tratamiento"
+  }
+]

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: $color-cream;
+  color: $color-text;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+main {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+section {
+  scroll-margin-top: 2rem;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 1.6rem;
+
+  p {
+    color: $color-secondary;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    margin-bottom: $spacing-sm;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: $color-primary;
+    font-family: $font-display;
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    font-weight: 600;
+  }
+}
+
+.skin-selector {
+  margin-bottom: 2.6rem;
+}
+
+.products {
+  margin-top: 1rem;
+}

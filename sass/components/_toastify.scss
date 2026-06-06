@@ -1,0 +1,11 @@
+/* Notificaciones Toastify */
+.toastify {
+  border-radius: $radius-pill;
+  box-shadow: $shadow-soft;
+  font-family: $font-main;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  padding: 0.95rem 1.25rem;
+  color: $color-white;
+  z-index: 9999;
+}
